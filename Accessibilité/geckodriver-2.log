@@ -1,0 +1,16 @@
+1683536333844	geckodriver	INFO	Listening on 127.0.0.1:56704
+1683536336898	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56705" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\h\\AppData\\Local\\Temp\\rust_mozprofilej2z4eK"
+1683536337343	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683536337349	Marionette	INFO	Listening on port 56713
+Read port: 56713
+WebDriver BiDi listening on ws://127.0.0.1:56705
+1683536337573	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\h\\AppData\\Local\\Temp\\rust_mozprofilej2z4eK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56705/devtools/browser/2ba446b0-5374-4476-ac5f-b108c12126d3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://fid-web.lbv-fidelite-dev.label-factory.ma."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://fid-web.lbv-fidelite-dev.label-factory.ma."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://fid-web.lbv-fidelite-dev.label-factory.ma."
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1683538655995	Marionette	INFO	Stopped listening on port 56713
+Dynamically enable window occlusion 1

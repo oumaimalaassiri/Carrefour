@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230508 11:44:43.511" rpa="false" schemaversion="3">
+<suite id="s1" name="Accéder Nos magasins" source="C:\Users\h\PycharmProjects\Automation\Accéder à les  pages du site\Accéder_Nos_magasins.robot">
+<test id="s1-t1" name="Accéder non magasins" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://fid-web.lbv-fidelite-dev.label-factory.ma/signin</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 11:44:44.159" level="INFO">Opening browser 'firefox' to base url 'https://fid-web.lbv-fidelite-dev.label-factory.ma/signin'.</msg>
+<msg timestamp="20230508 11:44:44.159" level="INFO">Firefox driver log is always forced to to: C:\Users\h\PycharmProjects\Automation\Accéder à les  pages du site\geckodriver-13.log</msg>
+<status status="PASS" starttime="20230508 11:44:44.159" endtime="20230508 11:44:55.115"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-1</arg>
+<arg>0650225690</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 11:44:55.115" level="INFO">Typing text '0650225690' into text field 'id : mui-1'.</msg>
+<status status="PASS" starttime="20230508 11:44:55.115" endtime="20230508 11:44:55.511"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-2</arg>
+<arg>Password@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 11:44:55.511" level="INFO">Typing text 'Password@123' into text field 'id : mui-2'.</msg>
+<status status="PASS" starttime="20230508 11:44:55.511" endtime="20230508 11:44:55.759"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id :mui-3</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230508 11:44:55.767" level="INFO">Clicking button 'id :mui-3'.</msg>
+<status status="PASS" starttime="20230508 11:44:55.767" endtime="20230508 11:44:56.074"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>id :GoToFidelitySpace</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 11:44:56.074" endtime="20230508 11:44:56.528"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id :GoToFidelitySpace</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230508 11:44:56.544" level="INFO">Clicking button 'id :GoToFidelitySpace'.</msg>
+<status status="PASS" starttime="20230508 11:44:56.544" endtime="20230508 11:44:56.813"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[3]/div[2]/div[1]/nav[2]/a[4]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 11:44:56.813" endtime="20230508 11:44:57.264"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[3]/div[2]/div[1]/nav[2]/a[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 11:44:57.264" level="INFO">Clicking element 'Xpath://*[@id="__next"]/div/div[3]/div[2]/div[1]/nav[2]/a[4]'.</msg>
+<status status="PASS" starttime="20230508 11:44:57.264" endtime="20230508 11:45:13.755"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 11:45:13.771" endtime="20230508 11:45:16.643"/>
+</kw>
+<status status="PASS" starttime="20230508 11:44:44.144" endtime="20230508 11:45:16.644"/>
+</test>
+<status status="PASS" starttime="20230508 11:44:43.511" endtime="20230508 11:45:16.647"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Accéder Nos magasins">Accéder Nos magasins</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

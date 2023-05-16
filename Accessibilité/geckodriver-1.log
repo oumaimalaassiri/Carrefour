@@ -1,0 +1,16 @@
+1683536275004	geckodriver	INFO	Listening on 127.0.0.1:56593
+1683536278157	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56594" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\h\\AppData\\Local\\Temp\\rust_mozprofilesPLOi0"
+1683536278969	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683536278977	Marionette	INFO	Listening on port 56605
+Read port: 56605
+WebDriver BiDi listening on ws://127.0.0.1:56594
+1683536279234	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\h\\AppData\\Local\\Temp\\rust_mozprofilesPLOi0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56594/devtools/browser/a70c8604-d091-4661-a06c-d4adb370a0c5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://fid-web.lbv-fidelite-dev.label-factory.ma."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://fid-web.lbv-fidelite-dev.label-factory.ma."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://fid-web.lbv-fidelite-dev.label-factory.ma."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 572: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1683536667705	Marionette	INFO	Stopped listening on port 56605
+Dynamically enable window occlusion 1

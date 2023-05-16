@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230516 09:15:02.560" rpa="false" schemaversion="3">
+<suite id="s1" name="Invalid Email" source="C:\Users\h\PycharmProjects\Automation\Cas d'exception\Invalid_Email.robot">
+<test id="s1-t1" name="Invalid Email" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://fid-web.lbv-fidelite-dev.label-factory.ma/signin</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230516 09:15:03.206" level="INFO">Opening browser 'firefox' to base url 'https://fid-web.lbv-fidelite-dev.label-factory.ma/signin'.</msg>
+<msg timestamp="20230516 09:15:03.224" level="INFO">Firefox driver log is always forced to to: C:\Users\h\PycharmProjects\Automation\Cas d'exception\geckodriver-12.log</msg>
+<status status="PASS" starttime="20230516 09:15:03.206" endtime="20230516 09:15:14.549"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-1</arg>
+<arg>Username@</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230516 09:15:14.564" level="INFO">Typing text 'Username@' into text field 'id : mui-1'.</msg>
+<status status="PASS" starttime="20230516 09:15:14.564" endtime="20230516 09:15:14.779"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id :mui-3</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230516 09:15:14.779" level="INFO">Clicking button 'id :mui-3'.</msg>
+<status status="PASS" starttime="20230516 09:15:14.779" endtime="20230516 09:15:15.130"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="__next"]/div[2]/div/div/div/div/div/span</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230516 09:15:15.130" endtime="20230516 09:15:15.543"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230516 09:15:18.544" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230516 09:15:15.543" endtime="20230516 09:15:18.544"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="__next"]/div[2]/div/div/div/div/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230516 09:15:18.544" level="INFO">Clicking element 'xpath://*[@id="__next"]/div[2]/div/div/div/div/div/span'.</msg>
+<status status="PASS" starttime="20230516 09:15:18.544" endtime="20230516 09:15:18.765"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230516 09:15:21.766" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230516 09:15:18.765" endtime="20230516 09:15:21.766"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${error message}</var>
+<arg>xpath://*[@id="__next"]/div[2]/div/div/div/div/div/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230516 09:15:21.811" level="INFO">${error message} = invalid_grant</msg>
+<status status="PASS" starttime="20230516 09:15:21.766" endtime="20230516 09:15:21.811"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${error message}</arg>
+<arg>invalid_grant</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230516 09:15:21.811" endtime="20230516 09:15:21.813"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230516 09:15:24.813" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230516 09:15:21.813" endtime="20230516 09:15:24.813"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230516 09:15:24.813" endtime="20230516 09:15:28.892"/>
+</kw>
+<status status="PASS" starttime="20230516 09:15:03.206" endtime="20230516 09:15:28.892"/>
+</test>
+<status status="PASS" starttime="20230516 09:15:02.576" endtime="20230516 09:15:28.892"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Invalid Email">Invalid Email</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

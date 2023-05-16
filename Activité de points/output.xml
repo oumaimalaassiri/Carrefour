@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230508 10:57:00.219" rpa="false" schemaversion="3">
+<suite id="s1" name="Trier Activité de points par date" source="C:\Users\h\PycharmProjects\Automation\Activité de points\Trier_Activité_de_points_par_date.robot">
+<test id="s1-t1" name="Trier L'Activité de points par date" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://fid-web.lbv-fidelite-dev.label-factory.ma/signin</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 10:57:00.613" level="INFO">Opening browser 'firefox' to base url 'https://fid-web.lbv-fidelite-dev.label-factory.ma/signin'.</msg>
+<msg timestamp="20230508 10:57:00.613" level="INFO">Firefox driver log is always forced to to: C:\Users\h\PycharmProjects\Automation\Activité de points\geckodriver-17.log</msg>
+<status status="PASS" starttime="20230508 10:57:00.613" endtime="20230508 10:57:11.126"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-1</arg>
+<arg>0650225690</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 10:57:11.142" level="INFO">Typing text '0650225690' into text field 'id : mui-1'.</msg>
+<status status="PASS" starttime="20230508 10:57:11.142" endtime="20230508 10:57:11.388"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-2</arg>
+<arg>Password@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 10:57:11.388" level="INFO">Typing text 'Password@123' into text field 'id : mui-2'.</msg>
+<status status="PASS" starttime="20230508 10:57:11.388" endtime="20230508 10:57:11.557"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id :mui-3</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230508 10:57:11.557" level="INFO">Clicking button 'id :mui-3'.</msg>
+<status status="PASS" starttime="20230508 10:57:11.557" endtime="20230508 10:57:11.836"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>id :GoToFidelitySpace</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 10:57:11.836" endtime="20230508 10:57:12.249"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id :GoToFidelitySpace</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230508 10:57:12.249" level="INFO">Clicking button 'id :GoToFidelitySpace'.</msg>
+<status status="PASS" starttime="20230508 10:57:12.249" endtime="20230508 10:57:12.506"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[3]/div[2]/table/thead/tr/th[2]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 10:57:12.506" endtime="20230508 10:57:12.938"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, 1500);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230508 10:57:12.938" level="INFO">Executing JavaScript:
+window.scrollTo(0, 1500);
+Without any arguments.</msg>
+<status status="PASS" starttime="20230508 10:57:12.938" endtime="20230508 10:57:12.976"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[3]/div[2]/table/thead/tr/th[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 10:57:12.992" level="INFO">Clicking element 'xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[3]/div[2]/table/thead/tr/th[2]'.</msg>
+<status status="PASS" starttime="20230508 10:57:12.992" endtime="20230508 10:57:13.440"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230508 10:57:18.440" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230508 10:57:13.440" endtime="20230508 10:57:18.440"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[3]/div[2]/table/thead/tr/th[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 10:57:18.440" level="INFO">Clicking element 'xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[3]/div[2]/table/thead/tr/th[2]'.</msg>
+<status status="PASS" starttime="20230508 10:57:18.440" endtime="20230508 10:57:18.735"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230508 10:57:23.735" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230508 10:57:18.735" endtime="20230508 10:57:23.735"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[3]/div[2]/table/thead/tr/th[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 10:57:23.735" level="INFO">Clicking element 'xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[3]/div[2]/table/thead/tr/th[2]'.</msg>
+<status status="PASS" starttime="20230508 10:57:23.735" endtime="20230508 10:57:23.998"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230508 10:57:28.998" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230508 10:57:23.998" endtime="20230508 10:57:28.998"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[3]/div[2]/table/thead/tr/th[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 10:57:28.998" level="INFO">Clicking element 'xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[3]/div[2]/table/thead/tr/th[2]'.</msg>
+<status status="PASS" starttime="20230508 10:57:28.998" endtime="20230508 10:57:29.272"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230508 10:57:34.273" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230508 10:57:29.272" endtime="20230508 10:57:34.273"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 10:57:34.273" endtime="20230508 10:57:37.597"/>
+</kw>
+<status status="PASS" starttime="20230508 10:57:00.613" endtime="20230508 10:57:37.597"/>
+</test>
+<status status="PASS" starttime="20230508 10:57:00.219" endtime="20230508 10:57:37.597"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Trier Activité de points par date">Trier Activité de points par date</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

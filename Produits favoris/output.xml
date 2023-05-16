@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230509 11:11:46.026" rpa="false" schemaversion="3">
+<suite id="s1" name="Limite-Produits-favoris" source="C:\Users\h\PycharmProjects\Automation\Produits favoris\Limite-Produits-favoris.robot">
+<test id="s1-t1" name="Produits favoris" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://fid-web.lbv-fidelite-dev.label-factory.ma/signin</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230509 11:11:46.584" level="INFO">Opening browser 'firefox' to base url 'https://fid-web.lbv-fidelite-dev.label-factory.ma/signin'.</msg>
+<msg timestamp="20230509 11:11:46.584" level="INFO">Firefox driver log is always forced to to: C:\Users\h\PycharmProjects\Automation\Produits favoris\geckodriver-4.log</msg>
+<status status="PASS" starttime="20230509 11:11:46.584" endtime="20230509 11:11:57.096"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-1</arg>
+<arg>0650225690</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 11:11:57.112" level="INFO">Typing text '0650225690' into text field 'id : mui-1'.</msg>
+<status status="PASS" starttime="20230509 11:11:57.096" endtime="20230509 11:11:57.375"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-2</arg>
+<arg>Password@1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 11:11:57.375" level="INFO">Typing text 'Password@1234' into text field 'id : mui-2'.</msg>
+<status status="PASS" starttime="20230509 11:11:57.375" endtime="20230509 11:11:57.544"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id :mui-3</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230509 11:11:57.560" level="INFO">Clicking button 'id :mui-3'.</msg>
+<status status="PASS" starttime="20230509 11:11:57.560" endtime="20230509 11:11:57.829"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>id :GoToFidelitySpace</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230509 11:11:57.829" endtime="20230509 11:11:58.247"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id :GoToFidelitySpace</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230509 11:11:58.247" level="INFO">Clicking button 'id :GoToFidelitySpace'.</msg>
+<status status="PASS" starttime="20230509 11:11:58.247" endtime="20230509 11:11:58.516"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[2]/div/div[2]/article[1]/figure/div[1]/button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20230509 11:12:03.587" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230509 11:12:03.587" level="FAIL">Element 'Xpath://*[@id="__next"]/div/div[2]/div/div[2]/article[1]/figure/div[1]/button' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20230509 11:11:58.516" endtime="20230509 11:12:03.587"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[2]/div/div[2]/article[1]/figure/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230509 11:12:03.587" endtime="20230509 11:12:03.587"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[2]/div/div[2]/article[2]/figure/div[1]/button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230509 11:12:03.587" endtime="20230509 11:12:03.587"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[2]/div/div[2]/article[1]/figure/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230509 11:12:03.587" endtime="20230509 11:12:03.587"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[2]/div/div[2]/article[3]/figure/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230509 11:12:03.587" endtime="20230509 11:12:03.587"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230509 11:12:03.587" endtime="20230509 11:12:03.587"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[1]/div[2]/nav/a[5]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230509 11:12:03.587" endtime="20230509 11:12:03.587"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230509 11:12:03.587" endtime="20230509 11:12:03.587"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230509 11:12:03.587" endtime="20230509 11:12:03.587"/>
+</kw>
+<status status="FAIL" starttime="20230509 11:11:46.568" endtime="20230509 11:12:03.587">Element 'Xpath://*[@id="__next"]/div/div[2]/div/div[2]/article[1]/figure/div[1]/button' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20230509 11:11:46.026" endtime="20230509 11:12:03.587"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Limite-Produits-favoris">Limite-Produits-favoris</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

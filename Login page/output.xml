@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230509 16:54:04.563" rpa="false" schemaversion="3">
+<suite id="s1" name="Inscrivez vous" source="C:\Users\h\PycharmProjects\Automation\Login page\Inscrivez_vous.robot">
+<test id="s1-t1" name="Inscrivez vous" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://fid-web.lbv-fidelite-dev.label-factory.ma/signin</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230509 16:54:04.974" level="INFO">Opening browser 'firefox' to base url 'https://fid-web.lbv-fidelite-dev.label-factory.ma/signin'.</msg>
+<msg timestamp="20230509 16:54:04.974" level="INFO">Firefox driver log is always forced to to: C:\Users\h\PycharmProjects\Automation\Login page\geckodriver-1.log</msg>
+<status status="PASS" starttime="20230509 16:54:04.958" endtime="20230509 16:54:15.419"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div/div[2]/div[2]/div[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:15.435" level="INFO">Clicking element 'Xpath://*[@id="__next"]/div/div/div[2]/div[2]/div[2]/a'.</msg>
+<status status="PASS" starttime="20230509 16:54:15.419" endtime="20230509 16:54:15.759"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>id : phoneNumber</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230509 16:54:15.759" endtime="20230509 16:54:15.806"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : phoneNumber</arg>
+<arg>0650225607</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:15.806" level="INFO">Typing text '0650225607' into text field 'id : phoneNumber'.</msg>
+<status status="PASS" starttime="20230509 16:54:15.806" endtime="20230509 16:54:16.285"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div/div[2]/div[2]/form/div[2]/div/div/label[1]/span[1]/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:16.285" level="INFO">Clicking button 'Xpath://*[@id="__next"]/div/div/div[2]/div[2]/form/div[2]/div/div/label[1]/span[1]/input'.</msg>
+<status status="PASS" starttime="20230509 16:54:16.285" endtime="20230509 16:54:16.585"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : firstName</arg>
+<arg>Oumaima</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:16.585" level="INFO">Typing text 'Oumaima' into text field 'id : firstName'.</msg>
+<status status="PASS" starttime="20230509 16:54:16.585" endtime="20230509 16:54:16.914"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id :lastName</arg>
+<arg>Laassiri</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:16.917" level="INFO">Typing text 'Laassiri' into text field 'id :lastName'.</msg>
+<status status="PASS" starttime="20230509 16:54:16.916" endtime="20230509 16:54:17.174"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id :password</arg>
+<arg>Password@1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:17.176" level="INFO">Typing text 'Password@1234' into text field 'id :password'.</msg>
+<status status="PASS" starttime="20230509 16:54:17.175" endtime="20230509 16:54:17.417"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div/div[2]/div[2]/form/div[5]/div[2]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:17.418" level="INFO">Clicking button 'Xpath://*[@id="__next"]/div/div/div[2]/div[2]/form/div[5]/div[2]/div/div/button'.</msg>
+<status status="PASS" starttime="20230509 16:54:17.417" endtime="20230509 16:54:17.651"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : passwordConfirmation</arg>
+<arg>Password@1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:17.654" level="INFO">Typing text 'Password@1234' into text field 'id : passwordConfirmation'.</msg>
+<status status="PASS" starttime="20230509 16:54:17.653" endtime="20230509 16:54:17.900"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div/div[2]/div[2]/form/div[6]/div[2]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:17.901" level="INFO">Clicking button 'Xpath://*[@id="__next"]/div/div/div[2]/div[2]/form/div[6]/div[2]/div/div/button'.</msg>
+<status status="PASS" starttime="20230509 16:54:17.900" endtime="20230509 16:54:18.135"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : email</arg>
+<arg>Oumaimalaassiri99@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:18.137" level="INFO">Typing text 'Oumaimalaassiri99@gmail.com' into text field 'id : email'.</msg>
+<status status="PASS" starttime="20230509 16:54:18.136" endtime="20230509 16:54:18.590"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-5</arg>
+<arg>26011999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:18.592" level="INFO">Typing text '26011999' into text field 'id : mui-5'.</msg>
+<status status="PASS" starttime="20230509 16:54:18.591" endtime="20230509 16:54:18.800"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div/div[2]/div[2]/form/div[9]/label/span[1]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:18.802" level="INFO">Clicking element 'Xpath://*[@id="__next"]/div/div/div[2]/div[2]/form/div[9]/label/span[1]/input'.</msg>
+<status status="PASS" starttime="20230509 16:54:18.801" endtime="20230509 16:54:19.035"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id : mui-6</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230509 16:54:19.040" level="INFO">Clicking button 'id : mui-6'.</msg>
+<status status="PASS" starttime="20230509 16:54:19.037" endtime="20230509 16:54:19.334"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230509 16:54:21.336" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230509 16:54:19.336" endtime="20230509 16:54:21.336"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230509 16:54:21.338" endtime="20230509 16:54:24.477"/>
+</kw>
+<status status="PASS" starttime="20230509 16:54:04.958" endtime="20230509 16:54:24.493"/>
+</test>
+<status status="PASS" starttime="20230509 16:54:04.563" endtime="20230509 16:54:24.493"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Inscrivez vous">Inscrivez vous</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

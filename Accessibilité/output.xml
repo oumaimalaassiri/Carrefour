@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230508 11:51:37.867" rpa="false" schemaversion="3">
+<suite id="s1" name="Découvrir programme fidélité" source="C:\Users\h\PycharmProjects\Automation\Accessibilité\Découvrir_programme_fidélité.robot">
+<test id="s1-t1" name="Découvrir le programme fidélité" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://fid-web.lbv-fidelite-dev.label-factory.ma/signin</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 11:51:38.437" level="INFO">Opening browser 'firefox' to base url 'https://fid-web.lbv-fidelite-dev.label-factory.ma/signin'.</msg>
+<msg timestamp="20230508 11:51:38.437" level="INFO">Firefox driver log is always forced to to: C:\Users\h\PycharmProjects\Automation\Accessibilité\geckodriver-4.log</msg>
+<status status="PASS" starttime="20230508 11:51:38.437" endtime="20230508 11:51:49.605"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-1</arg>
+<arg>0650225690</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 11:51:49.605" level="INFO">Typing text '0650225690' into text field 'id : mui-1'.</msg>
+<status status="PASS" starttime="20230508 11:51:49.605" endtime="20230508 11:51:50.006"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id : mui-2</arg>
+<arg>Password@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 11:51:50.006" level="INFO">Typing text 'Password@123' into text field 'id : mui-2'.</msg>
+<status status="PASS" starttime="20230508 11:51:50.006" endtime="20230508 11:51:50.222"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id :mui-3</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230508 11:51:50.222" level="INFO">Clicking button 'id :mui-3'.</msg>
+<status status="PASS" starttime="20230508 11:51:50.222" endtime="20230508 11:51:50.576"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>id :GoToFidelitySpace</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 11:51:50.576" endtime="20230508 11:51:50.863"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id :GoToFidelitySpace</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230508 11:51:50.863" level="INFO">Clicking button 'id :GoToFidelitySpace'.</msg>
+<status status="PASS" starttime="20230508 11:51:50.863" endtime="20230508 11:51:51.144"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>Xpath:/html/body/div/div/div[3]/div[2]/div[1]/nav[1]/a</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 11:51:51.146" endtime="20230508 11:51:51.459"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath:/html/body/div/div/div[3]/div[2]/div[1]/nav[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 11:51:51.459" level="INFO">Clicking element 'Xpath:/html/body/div/div/div[3]/div[2]/div[1]/nav[1]/a'.</msg>
+<status status="PASS" starttime="20230508 11:51:51.459" endtime="20230508 11:51:52.547"/>
+</kw>
+<status status="PASS" starttime="20230508 11:51:38.437" endtime="20230508 11:51:52.547"/>
+</test>
+<status status="PASS" starttime="20230508 11:51:37.867" endtime="20230508 11:51:52.547"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Découvrir programme fidélité">Découvrir programme fidélité</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

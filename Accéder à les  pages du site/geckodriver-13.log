@@ -1,0 +1,15 @@
+1683542684545	geckodriver	INFO	Listening on 127.0.0.1:62597
+1683542687580	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62598" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\h\\AppData\\Local\\Temp\\rust_mozprofileqMgEoA"
+1683542688236	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683542688247	Marionette	INFO	Listening on port 62607
+Read port: 62607
+WebDriver BiDi listening on ws://127.0.0.1:62598
+1683542688543	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\h\\AppData\\Local\\Temp\\rust_mozprofileqMgEoA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62598/devtools/browser/f8c357d4-c075-4a96-a074-e75a534dcfc3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://fid-web.lbv-fidelite-dev.label-factory.ma."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://fid-web.lbv-fidelite-dev.label-factory.ma."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://fid-web.lbv-fidelite-dev.label-factory.ma."
+1683542713812	Marionette	INFO	Stopped listening on port 62607
+Dynamically enable window occlusion 1

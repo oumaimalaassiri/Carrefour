@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230508 21:19:17.831" rpa="false" schemaversion="3">
+<suite id="s1" name="TicketdeCaisse" source="C:\Users\h\PycharmProjects\Automation\ TestCases\TicketdeCaisse.robot">
+<test id="s1-t1" name="Afficher un &quot;Ticket de caisse&quot;" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://fid-web.lbv-fidelite-dev.label-factory.ma/signin</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 21:19:18.501" level="INFO">Opening browser 'chrome' to base url 'https://fid-web.lbv-fidelite-dev.label-factory.ma/signin'.</msg>
+<status status="PASS" starttime="20230508 21:19:18.501" endtime="20230508 21:19:20.680"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:mui-1</arg>
+<arg>0650225690</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 21:19:20.680" level="INFO">Typing text '0650225690' into text field 'id:mui-1'.</msg>
+<msg timestamp="20230508 21:19:20.864" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230508 21:19:20.866" level="FAIL">Element with locator 'id:mui-1' not found.</msg>
+<status status="FAIL" starttime="20230508 21:19:20.680" endtime="20230508 21:19:20.866"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230508 21:19:20.866" endtime="20230508 21:19:20.866"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id :mui-2</arg>
+<arg>Password@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230508 21:19:20.866" endtime="20230508 21:19:20.866"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230508 21:19:20.866" endtime="20230508 21:19:20.866"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id: mui-3</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230508 21:19:20.866" endtime="20230508 21:19:20.866"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://fid-web.lbv-fidelite-dev.label-factory.ma/home</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20230508 21:19:20.866" endtime="20230508 21:19:20.866"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div/div[2]/div[2]/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230508 21:19:20.866" endtime="20230508 21:19:20.866"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Xpath://*[@id="__next"]/div/div[2]/div/div[2]/div[2]/div[2]/table/tbody/tr[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230508 21:19:20.866" endtime="20230508 21:19:20.866"/>
+</kw>
+<status status="FAIL" starttime="20230508 21:19:18.501" endtime="20230508 21:19:20.874">Element with locator 'id:mui-1' not found.</status>
+</test>
+<status status="FAIL" starttime="20230508 21:19:17.847" endtime="20230508 21:19:20.874"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TicketdeCaisse">TicketdeCaisse</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
